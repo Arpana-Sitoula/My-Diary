@@ -12,3 +12,4 @@ app.use('/api/note', require('./routes/note'))
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+//Just to maintain streak. I will continue this from tommorrow.
