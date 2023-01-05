@@ -5,6 +5,9 @@ connectToMongo();
 const app = express()
 const port = 3000
 
+//middleware
+app.use(express.json())
+
 //Available Routes
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/note', require('./routes/note'))
@@ -12,4 +15,3 @@ app.use('/api/note', require('./routes/note'))
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-//Just to maintain streak. I will continue this from tommorrow.
